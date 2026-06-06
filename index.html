@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CredFlow — Know Before You Run Out</title>
+  <meta name="description" content="CredFlow tracks your Claude.ai free-tier usage in real time. No more hitting limits mid-thought. Know exactly where you stand." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CredFlow — Know Before You Run Out" />
+  <meta property="og:description" content="Real-time Claude.ai usage tracking. See your session and weekly limits at a glance. Free Chrome extension." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://credflow.vercel.app" />
+  <meta property="og:image" content="https://credflow.vercel.app/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CredFlow — Know Before You Run Out" />
+  <meta name="twitter:description" content="Real-time Claude.ai usage tracking. Free Chrome extension." />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%235170FF'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-size='18' fill='white'>C</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark">C</span>
+        <span class="logo-text">CredFlow</span>
+      </a>
+      <div class="nav-links">
+        <a href="pages/privacy.html">Privacy</a>
+        <a href="pages/terms.html">Terms</a>
+        <a href="#waitlist" class="btn-nav">Join Waitlist</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Chrome Extension · Free
+      </div>
+      <h1 class="hero-headline">
+        Know before<br />
+        <em>you run out.</em>
+      </h1>
+      <p class="hero-sub">
+        CredFlow tracks your Claude.ai free-tier limits silently in the background —
+        session, weekly, and reset time — so you never hit a wall mid-thought again.
+      </p>
+      <div class="hero-cta">
+        <a href="#waitlist" class="btn-primary">Join the Waitlist</a>
+        <a href="#how" class="btn-ghost">See how it works ↓</a>
+      </div>
+
+      <!-- MOCK POPUP -->
+      <div class="popup-mock" aria-hidden="true">
+        <div class="popup-header">
+          <span class="popup-logo">CredFlow</span>
+          <span class="live-badge">● Live</span>
+        </div>
+        <div class="popup-cards">
+          <div class="mock-card blue">
+            <div class="mock-card-label">Session</div>
+            <div class="mock-card-value">72<span>%</span></div>
+            <div class="mock-bar">
+              <div class="mock-bar-fill blue-fill" style="width:72%"></div>
+            </div>
+            <div class="mock-card-sub">Resets in 3h 21m</div>
+          </div>
+          <div class="mock-card amber">
+            <div class="mock-card-label">Weekly</div>
+            <div class="mock-card-value">34<span>%</span></div>
+            <div class="mock-bar">
+              <div class="mock-bar-fill amber-fill" style="width:34%"></div>
+            </div>
+            <div class="mock-card-sub">Resets Mon 00:00</div>
+          </div>
+        </div>
+        <div class="mock-insight">💡 You're 72% through your session. Pace yourself.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem" id="problem">
+    <div class="container">
+      <div class="section-label">The Problem</div>
+      <h2 class="section-title">Every Claude user has been here.</h2>
+      <div class="pain-grid">
+        <div class="pain-card">
+          <div class="pain-icon">🚧</div>
+          <h3>Hard stop, no warning</h3>
+          <p>Claude cuts you off mid-sentence. No meter, no countdown — just a wall.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">🕰️</div>
+          <h3>No reset visibility</h3>
+          <p>When does it reset? An hour? Eight hours? Nobody knows. You keep checking.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">🤷</div>
+          <h3>Usage in the dark</h3>
+          <p>No counter. No estimate. No way to pace yourself for a 3-hour study session.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title">Install once. Never think about it again.</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Install the extension</h3>
+          <p>One click from the Chrome Web Store. No API keys, no configuration, no account required to get started.</p>
+        </div>
+        <div class="step-divider">→</div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Use Claude as normal</h3>
+          <p>CredFlow watches silently. It never reads your messages — only detects when a message is sent.</p>
+        </div>
+        <div class="step-divider">→</div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Glance and know</h3>
+          <p>Click the icon for a live view of your session %, weekly %, and exact reset time. Alert at 80%.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label">What You Get</div>
+      <h2 class="section-title">Everything. No bloat.</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">📊</div>
+          <h3>Live usage bar</h3>
+          <p>Injected directly into claude.ai. Session and weekly percentage, always visible.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🔔</div>
+          <h3>80% alert</h3>
+          <p>Chrome notification before you hit the wall. Pro users set their own threshold.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">⏱️</div>
+          <h3>Exact reset time</h3>
+          <p>See a live countdown to when your session and weekly limits reset.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">📅</div>
+          <h3>7-day history</h3>
+          <p>Bar chart of your usage patterns. Spot heavy days. Plan around them.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🔒</div>
+          <h3>Zero content access</h3>
+          <p>CredFlow never reads your messages. Only two numbers leave your browser.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🌐</div>
+          <h3>Web dashboard</h3>
+          <p>Full usage dashboard at credflow-dashboard.vercel.app. Sign in, see everything.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-label">Pricing</div>
+      <h2 class="section-title">Free forever. Upgrade when it matters.</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="plan-name">Free</div>
+          <div class="plan-price">$0<span>/mo</span></div>
+          <ul class="plan-features">
+            <li>✓ Live session + weekly tracking</li>
+            <li>✓ Injected usage bar in claude.ai</li>
+            <li>✓ 80% alert notification</li>
+            <li>✓ Reset time countdown</li>
+            <li>✓ Today's usage history</li>
+            <li class="muted">— Custom alert threshold</li>
+            <li class="muted">— 30-day history</li>
+            <li class="muted">— Weekly email digest</li>
+          </ul>
+          <a href="#waitlist" class="btn-outline">Join Waitlist</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="plan-badge">Coming Soon</div>
+          <div class="plan-name">Pro</div>
+          <div class="plan-price">$4<span>/mo</span></div>
+          <ul class="plan-features">
+            <li>✓ Everything in Free</li>
+            <li>✓ Custom alert threshold</li>
+            <li>✓ 30-day usage history</li>
+            <li>✓ Weekly email digest</li>
+            <li>✓ More platforms (ChatGPT, Gemini)</li>
+            <li>✓ Priority support</li>
+          </ul>
+          <a href="#waitlist" class="btn-primary">Get Early Access</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAITLIST -->
+  <section class="waitlist-section" id="waitlist">
+    <div class="container">
+      <div class="waitlist-box">
+        <div class="section-label">Early Access</div>
+        <h2 class="section-title">Be first when it ships.</h2>
+        <p class="waitlist-sub">CredFlow launches on the Chrome Web Store soon. Join the waitlist and get notified the moment it's live.</p>
+        <div class="waitlist-form" id="waitlist-form">
+          <input type="email" id="email-input" placeholder="your@email.com" autocomplete="email" />
+          <button id="join-btn" type="button">Join Waitlist</button>
+        </div>
+        <p class="waitlist-note" id="waitlist-msg"></p>
+        <p class="waitlist-fine">No spam. One email when it's live. Unsubscribe any time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-mark small">C</span>
+          <span class="logo-text">CredFlow</span>
+        </div>
+        <div class="footer-links">
+          <a href="pages/privacy.html">Privacy Policy</a>
+          <a href="pages/terms.html">Terms of Service</a>
+          <a href="mailto:hello@credflow.app">Contact</a>
+        </div>
+        <div class="footer-copy">© 2026 CredFlow. India-built, globally designed.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/waitlist.js"></script>
+</body>
+</html>

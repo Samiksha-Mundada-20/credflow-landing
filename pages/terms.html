@@ -32,69 +32,99 @@
       <div class="legal-header">
         <div class="section-label">Legal</div>
         <h1>Terms of Service</h1>
-        <p class="legal-meta">Last updated: June 2026 · Effective immediately</p>
+        <p class="legal-meta">Last updated: June 6, 2026 &nbsp;·&nbsp; Effective immediately</p>
       </div>
 
       <div class="legal-body">
 
         <div class="legal-callout">
-          <strong>Plain English:</strong> Use CredFlow as intended. Don't try to abuse it, reverse-engineer it, or use it in ways that violate Claude's or ChatGPT's terms. We provide it as-is and will do our best to keep it working.
+          <strong>Summary:</strong> CredFlow is an independent tool that reads usage signals from AI chat platforms to help you track your own limits. It is not affiliated with Anthropic, OpenAI, or Google. Use it responsibly, in line with the terms of the platforms it interacts with. We provide it as-is and will do our best to keep it working.
         </div>
 
-        <h2>1. Acceptance</h2>
-        <p>By installing the CredFlow Chrome extension or using the CredFlow web dashboard ("Service"), you agree to these Terms of Service ("Terms"). If you do not agree, do not use the Service.</p>
+        <h2>1. Acceptance of Terms</h2>
+        <p>By installing the CredFlow Chrome extension or accessing the CredFlow web dashboard at credflow-dashboard.vercel.app (collectively, the "Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not install or use the Service.</p>
 
         <h2>2. Description of Service</h2>
-        <p>CredFlow is a browser extension and web dashboard that tracks your personal AI chat usage limits on platforms including claude.ai. It displays session and weekly utilization metrics, sends browser notifications, and maintains a usage history. CredFlow is an independent product and is not affiliated with, endorsed by, or sponsored by Anthropic, OpenAI, Google, or any AI platform provider.</p>
+        <p>CredFlow is a browser extension and web dashboard that helps individual users monitor their personal AI chat usage limits on supported platforms, currently including claude.ai and chatgpt.com. The Service displays session and weekly utilization metrics, sends browser notifications at configurable thresholds, and maintains a usage history.</p>
+        <p>CredFlow is an independent product. It is not affiliated with, endorsed by, sponsored by, or in any way connected to Anthropic, OpenAI, Google, or any other AI platform provider.</p>
 
-        <h2>3. Eligibility</h2>
-        <p>You must be at least 13 years old to use CredFlow. By using the Service, you represent that you meet this requirement.</p>
+        <h2>3. Platform Interaction and Third-Party Terms</h2>
+        <p>CredFlow operates by reading utilization values exposed in the session state of supported AI chat platforms. This interaction occurs on the client side within your browser and does not involve CredFlow's servers accessing those platforms on your behalf.</p>
+        <p>However, the terms of service of third-party platforms (including Anthropic's terms for claude.ai and OpenAI's terms for chatgpt.com) may restrict or limit automated interactions with their interfaces, including DOM reading by browser extensions. CredFlow does not evaluate or warrant whether your use of this extension is compliant with any third-party platform's terms.</p>
+        <p>You are solely responsible for reviewing and complying with the terms of any platform you use alongside CredFlow. CredFlow is not responsible for any account restrictions, suspensions, or other consequences imposed by third-party platforms as a result of using this extension.</p>
 
-        <h2>4. Account Responsibilities</h2>
+        <h2>4. Eligibility</h2>
+        <p>You must be at least 13 years old to use CredFlow. By using the Service, you represent that you meet this requirement. If you are under 18, you represent that you have your parent or guardian's permission to use the Service.</p>
+
+        <h2>5. Account Responsibilities</h2>
+        <p>If you create an account, you are responsible for:</p>
         <ul>
-          <li>You are responsible for maintaining the confidentiality of your account credentials.</li>
-          <li>You are responsible for all activity that occurs under your account.</li>
-          <li>Notify us immediately at <a href="mailto:hello@credflow.app">hello@credflow.app</a> if you suspect unauthorized use of your account.</li>
+          <li>Maintaining the confidentiality of your login credentials</li>
+          <li>All activity that occurs under your account</li>
+          <li>Notifying us promptly at <a href="mailto:hello@credflow.app">hello@credflow.app</a> if you become aware of any unauthorized access to your account</li>
+        </ul>
+        <p>We are not liable for any loss or damage resulting from unauthorized access to your account where you have not taken reasonable steps to protect your credentials.</p>
+
+        <h2>6. Acceptable Use</h2>
+        <p>You agree not to use CredFlow in any way that:</p>
+        <ul>
+          <li>Violates applicable laws or regulations</li>
+          <li>Attempts to reverse-engineer, decompile, or extract source code from the extension, except to the extent expressly permitted by applicable law</li>
+          <li>Intentionally abuses or overloads our backend infrastructure</li>
+          <li>Creates multiple accounts to circumvent plan-based limitations</li>
+          <li>Resells, sublicenses, or commercially redistributes access to the Service without our prior written consent</li>
+          <li>Attempts to gain unauthorized access to other users' data or our systems</li>
         </ul>
 
-        <h2>5. Acceptable Use</h2>
-        <p>You agree not to:</p>
+        <h2>7. Subscriptions and Payments</h2>
+        <p>CredFlow offers a free tier and a Pro tier. Pro features are available at $4.00 USD per month, billed on a recurring monthly basis through Stripe.</p>
         <ul>
-          <li>Use CredFlow in any way that violates applicable law or regulation</li>
-          <li>Attempt to reverse-engineer, decompile, or extract source code from the extension beyond what is permitted by law</li>
-          <li>Abuse or overload our backend infrastructure (Supabase)</li>
-          <li>Create multiple accounts to circumvent free-tier limits</li>
-          <li>Resell, sublicense, or commercialize access to the Service without our written permission</li>
-          <li>Use the Service in ways that violate the terms of service of claude.ai, chatgpt.com, or any other platform the extension interacts with</li>
+          <li><strong>Renewals:</strong> Subscriptions automatically renew each month unless you cancel before the renewal date.</li>
+          <li><strong>Cancellation:</strong> You may cancel at any time from your account settings or by contacting us. Cancellation takes effect at the end of the current billing period. You retain Pro access until that period ends.</li>
+          <li><strong>Refunds:</strong> We do not offer refunds for partial months, except where required by applicable consumer protection law.</li>
+          <li><strong>Price changes:</strong> We may change the Pro pricing with at least 30 days' notice before the new price takes effect for existing subscribers.</li>
+          <li><strong>Payment processing:</strong> All payments are processed by Stripe. CredFlow does not see, store, or have access to your payment card number or financial account credentials. By subscribing, you also agree to Stripe's terms of service.</li>
+          <li><strong>Downgrade:</strong> If you downgrade from Pro to Free, usage snapshots older than 90 days will be deleted within 30 days of the downgrade date.</li>
         </ul>
 
-        <h2>6. Subscription and Payments (Pro Tier)</h2>
-        <p>Pro tier features are available at $4/month (USD). Subscriptions are billed monthly via Stripe. You may cancel at any time; cancellation takes effect at the end of the current billing period. No refunds are provided for partial months. Prices may change with 30 days' notice.</p>
+        <h2>8. Service Availability</h2>
+        <p>We target 99% backend uptime but do not provide a service level agreement (SLA) or offer credits for downtime. The extension may stop functioning correctly if a supported platform updates its interface in a way that breaks our detection logic. When this happens, we will work to release a fix as quickly as reasonably possible, but we do not guarantee a specific resolution timeline.</p>
+        <p>We reserve the right to modify, suspend, or discontinue any part of the Service at any time. Where reasonably possible, we will provide advance notice of significant changes.</p>
 
-        <h2>7. Service Availability</h2>
-        <p>We aim for 99% backend uptime but do not guarantee uninterrupted service. The extension may temporarily stop working if claude.ai or chatgpt.com change their interface. We will release fixes promptly when this occurs but cannot guarantee a specific timeline.</p>
-        <p>We reserve the right to modify, suspend, or discontinue any part of the Service at any time, with or without notice.</p>
+        <h2>9. Intellectual Property</h2>
+        <p>The CredFlow name, logo, extension code, and dashboard code are the intellectual property of CredFlow. These Terms do not grant you any right to use our name, logo, or other brand assets. All rights not expressly granted here are reserved.</p>
 
-        <h2>8. Intellectual Property</h2>
-        <p>The CredFlow name, logo, extension code, and dashboard code are the intellectual property of CredFlow. Nothing in these Terms grants you any right to use our trademarks or brand assets.</p>
+        <h2>10. Disclaimer of Warranties</h2>
+        <p>The Service is provided "as is" and "as available" without warranties of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+        <p>We do not warrant that the Service will always be available, error-free, or free from security vulnerabilities. Usage estimates displayed by CredFlow are derived from signals provided by third-party AI platforms and may not exactly reflect those platforms' internal limit calculations. You should not rely solely on CredFlow's estimates for time-sensitive decisions.</p>
 
-        <h2>9. Disclaimer of Warranties</h2>
-        <p>THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED. WE DO NOT WARRANT THAT THE SERVICE WILL BE ERROR-FREE, UNINTERRUPTED, OR FREE OF SECURITY VULNERABILITIES. USAGE ESTIMATES SHOWN IN THE EXTENSION ARE BASED ON SIGNALS FROM THE AI PLATFORMS AND MAY NOT PERFECTLY REFLECT EACH PLATFORM'S ACTUAL LIMIT CALCULATIONS.</p>
+        <h2>11. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by applicable law, CredFlow will not be liable for any indirect, incidental, special, consequential, or punitive damages arising from or related to your use of the Service, even if we have been advised of the possibility of such damages.</p>
+        <p>Our total aggregate liability to you for any direct damages arising from these Terms or your use of the Service will not exceed the total amount you paid us in the 12 months immediately preceding the claim. This limitation does not apply where liability cannot be excluded by law, including in cases involving gross negligence, fraud, or mandatory consumer protection rights.</p>
 
-        <h2>10. Limitation of Liability</h2>
-        <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, CREDFLOW SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THE SERVICE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. OUR TOTAL LIABILITY TO YOU FOR ANY CLAIM ARISING FROM THESE TERMS SHALL NOT EXCEED THE AMOUNT YOU PAID US IN THE 12 MONTHS PRECEDING THE CLAIM.</p>
+        <h2>12. Termination</h2>
+        <p>We may suspend or terminate your access to the Service if we reasonably believe you have violated these Terms, if your use poses a security or legal risk to us or other users, or if we discontinue the Service. Where practical, we will provide reasonable notice before termination. Upon termination, your right to use the Service ceases and we may delete your account data in accordance with our retention policy.</p>
+        <p>You may terminate your account at any time by contacting us at <a href="mailto:hello@credflow.app">hello@credflow.app</a>.</p>
 
-        <h2>11. Third-Party Services</h2>
-        <p>CredFlow relies on third-party services including Supabase (database and auth), Vercel (hosting), and Stripe (payments). Your use of these services through CredFlow is also subject to their respective terms and privacy policies.</p>
+        <h2>13. Third-Party Services</h2>
+        <p>CredFlow relies on third-party services to operate, including Supabase (database and authentication), Vercel (hosting), and Stripe (payments). Your use of CredFlow may also be governed by the terms and privacy policies of these providers. We are not responsible for the practices of these third parties.</p>
 
-        <h2>12. Governing Law</h2>
-        <p>These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts located in India.</p>
+        <h2>14. Dispute Resolution</h2>
+        <p>If you have a concern or dispute arising from these Terms or your use of the Service, we ask that you first contact us at <a href="mailto:hello@credflow.app">hello@credflow.app</a> and allow us 30 days to attempt an informal resolution before pursuing any formal legal action. We genuinely want to resolve issues directly and quickly.</p>
 
-        <h2>13. Changes to These Terms</h2>
-        <p>We may update these Terms at any time. Material changes will be communicated via email or a prominent notice on the Service. Continued use after changes constitutes acceptance.</p>
+        <h2>15. Governing Law</h2>
+        <p>These Terms are governed by the laws of India. Subject to Section 14, any disputes that cannot be resolved informally shall be subject to the jurisdiction of the courts of Pune, Maharashtra, India, except where applicable consumer protection law requires otherwise.</p>
 
-        <h2>14. Contact</h2>
-        <p>Questions about these Terms? Email us: <a href="mailto:hello@credflow.app">hello@credflow.app</a></p>
+        <h2>16. Severability</h2>
+        <p>If any provision of these Terms is found to be unenforceable or invalid under applicable law, that provision will be limited or removed to the minimum extent necessary, and the remaining provisions will continue in full force and effect.</p>
+
+        <h2>17. Changes to These Terms</h2>
+        <p>We may update these Terms from time to time. If we make material changes, we will update the "Last updated" date at the top of this page and notify registered users by email where appropriate. Continued use of the Service after an update constitutes your acceptance of the revised Terms.</p>
+
+        <h2>18. Contact</h2>
+        <p>Questions about these Terms? Reach us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:hello@credflow.app">hello@credflow.app</a><br />
+        We aim to respond within 48 hours.</p>
 
       </div>
     </div>

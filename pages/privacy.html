@@ -42,7 +42,9 @@
         </div>
 
         <h2>1. Who We Are</h2>
-        <p>CredFlow ("CredFlow," "we," "us," or "our") is a Chrome browser extension and web dashboard that helps users track their AI chat usage limits in real time. This Privacy Policy describes how we collect, use, store, and protect information when you use the CredFlow extension, the web dashboard at <strong>credflow-dashboard.vercel.app</strong>, or the website at <strong>credflow.vercel.app</strong>.</p>
+        <p>CredFlow ("CredFlow," "we," "us," or "our") is a Chrome browser extension and web dashboard that helps users track their AI chat usage limits in real time. CredFlow is an independently operated product, currently run as a sole proprietorship based in Pune, Maharashtra, India. We are not a registered company at this stage; if that changes, this policy will be updated to reflect the legal entity details.</p>
+        <p>This Privacy Policy describes how we collect, use, store, and protect information when you use the CredFlow extension, the web dashboard at <strong>credflow-dashboard.vercel.app</strong>, or the website at <strong>credflow.vercel.app</strong>.</p>
+        <p>If you have questions about who is responsible for your data, contact us at <a href="mailto:hello@credflow.app">hello@credflow.app</a>.</p>
         <p>By installing the extension or creating an account, you acknowledge that you have read and understood this policy.</p>
 
         <h2>2. What We Collect</h2>
@@ -100,9 +102,20 @@
         <p>We do not sell personal data. We do not use personal data for advertising. We do not share personal data with third parties for their own marketing purposes.</p>
 
         <h2>5. Data Storage and Security</h2>
-        <p>All user data is stored on <strong>Supabase</strong>, hosted on AWS in the ap-south-1 region (Mumbai, India). Every database table uses Row-Level Security (RLS), which means each user's data is only accessible to that user's authenticated session — not to other users and not without a valid JWT.</p>
-        <p>All communication between the extension, the dashboard, and our backend is encrypted over HTTPS. Passwords are hashed and not stored in plain text.</p>
+        <p>All user data is stored on <strong>Supabase</strong>, hosted on AWS in the ap-south-1 region (Mumbai, India). Row-Level Security (RLS) is configured on every database table to restrict data access to authenticated users acting on their own records. All communication between the extension, the dashboard, and our backend is encrypted over HTTPS. Passwords are hashed and not stored in plain text.</p>
         <p>While we implement commercially reasonable technical and organizational measures to protect your data, no method of electronic storage or transmission over the internet is completely secure. We cannot guarantee absolute security, but we will notify affected users and relevant authorities promptly if we become aware of a data breach, as required by applicable law.</p>
+
+        <h2>5a. International Data Transfers</h2>
+        <p>CredFlow's backend infrastructure is hosted in Mumbai, India (AWS ap-south-1). If you access CredFlow from outside India, your data may be transferred to and processed in India and in other jurisdictions where our service providers operate, including the United States (Vercel, Stripe) and Ireland (Supabase infrastructure). These countries may have data protection laws that differ from those in your country. By using CredFlow, you acknowledge this. Where required by applicable law, we rely on appropriate safeguards to protect your data during such transfers.</p>
+
+        <h2>5b. Legal Basis for Processing</h2>
+        <p>For users in the European Economic Area, the United Kingdom, and other jurisdictions where a legal basis for processing is required, we process personal data on the following bases:</p>
+        <ul>
+          <li><strong>Contract performance</strong> — processing your account data and usage snapshots is necessary to provide the Service you signed up for</li>
+          <li><strong>Legitimate interests</strong> — processing technical metadata and infrastructure logs is necessary for security, reliability, and fraud prevention, where those interests are not overridden by your rights</li>
+          <li><strong>Consent</strong> — for waitlist communications and optional email notifications, where you have provided explicit consent</li>
+        </ul>
+        <p>Where processing is based on consent, you may withdraw that consent at any time without affecting the lawfulness of processing before withdrawal.</p>
 
         <h2>6. Data Retention</h2>
         <ul>
